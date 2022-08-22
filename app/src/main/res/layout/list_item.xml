@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/black2"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:fontFamily="@font/circular_std"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ocean Drive Miami"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:textColor="@color/black2"
+        android:textSize="14sp"
+        android:fontFamily="@font/circular_std"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="230m"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:textColor="@color/black22"
+        android:textSize="14sp"
+        android:fontFamily="@font/circular_std"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 Belgard Road, Tallaght, Miami"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:id="@+id/workingTime"
+        android:textColor="@color/black22"
+        android:textSize="14sp"
+        android:fontFamily="@font/circular_std"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today 09:00 - 22:00"
+        android:layout_marginBottom="3dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/curbsideCard"
+        app:cardCornerRadius="2dp"
+        android:backgroundTint="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="2dp"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/circular_std"
+            android:text="Curbside"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="@color/black222"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>
