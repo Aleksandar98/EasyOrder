@@ -29,7 +29,7 @@ While the way the data is presented to the user (UI layer) or the way the data i
 The classes in the domain have no dependencies on the other layers.
 
 ## Data
-- ApiModels live in the Data layer. They match the server models 1-1 and are the output of the ApiServices.
+- ApiModels live in the Data layer. They match the server models 1-1 and are the output of the MenuPlaygroundApi.
 - Providers offer RxJava3 interfaces.
 
 ## Domain
@@ -40,8 +40,6 @@ The classes in the domain have no dependencies on the other layers.
 
 ## UI - MVVM
 - We use Android Architecture Components on this layer: Android ViewModels and LiveData.
-- The ViewData classes are the models of the UI layer. They are the representation of the Domain Models in an easy representation for the UI (ex. Strings).
-- ViewDataMappers live in the UI layer, which take Domain Models and convert them to the necessary ViewData models.
 - Android ViewModels talk directly to the UseCases in the Domain layer. They get Domain models, transform them with the help of the ViewDataMappers to ViewData and make decisions about how to present the data in the Views.
 - Views are represented by Activities, which talk to their ViewModels and get their ViewData through LiveData observables.
 
